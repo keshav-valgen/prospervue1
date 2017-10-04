@@ -6,6 +6,8 @@
 #'@export predictor
 #'
 
+
+
 predictor <- function(access_token, instance_url, object, numfield, catfield){
 
   instance_u <- paste0(instance_url,'/')
