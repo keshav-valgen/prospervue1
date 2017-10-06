@@ -12,6 +12,8 @@ predictor <- function(access_token, instance_url, object, numfield, catfield){
 
   instance_u <- paste0(instance_url,'/')
   api <- '36.0'
+  
+  
   myquery <- paste0('Select Id, ', numfield,', ',catfield,' FROM ', object)
   session <- c(sessionID = access_token,instanceURL = instance_u, apiVersion = api)
   data1 <- rforcecom.bulkQuery(session, myquery, object)
